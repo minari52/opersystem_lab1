@@ -39,19 +39,6 @@ int main(int argc, char *argv[]){
         return 1;
     }
 
-    printf("%c", (info.st_mode & S_IRUSR) ? 'r' : '-');
-    printf("%c", (info.st_mode & S_IWUSR) ? 'w' : '-');
-    printf("%c", (info.st_mode & S_IXUSR) ? 'x' : '-');
-
-    printf("%c", (info.st_mode & S_IRGRP) ? 'r' : '-');
-    printf("%c", (info.st_mode & S_IWGRP) ? 'w' : '-');
-    printf("%c", (info.st_mode & S_IXGRP) ? 'x' : '-');
-
-    printf("%c", (info.st_mode & S_IROTH) ? 'r' : '-');
-    printf("%c", (info.st_mode & S_IWOTH) ? 'w' : '-');
-    printf("%c", (info.st_mode & S_IXOTH) ? 'x' : '-');
-    printf("\n");
-
     int categories = 0;
     int rights = 0;
 
