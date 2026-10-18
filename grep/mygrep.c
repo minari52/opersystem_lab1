@@ -40,12 +40,12 @@ int main(int argc, char *argv[]){
 
             printf("%s", line);
 
+            if (strlen(line) > 0 && line[strlen(line) - 1] != '\n'){
+                printf("\n");
         }
 
-        if (strlen(line) > 0 && line[strlen(line) - 1] != '\n'){
-
-            printf("\n");
         }
+        
     }
     if (argc == 3){
 
